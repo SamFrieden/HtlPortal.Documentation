@@ -1,0 +1,134 @@
+PS C:\Dev\StressTracker> dotnet workload list        
+
+Installed Workload Id      Manifest Version                       Installation Source
+-------------------------------------------------------------------------------------
+maui                       8.0.0-rc.2.9530/8.0.100-rc.2           SDK 8.0.100-rc.2
+wasm-tools                 8.0.0-rc.2.23479.6/8.0.100-rc.2        VS 17.7.34221.43
+maui-windows               8.0.0-rc.2.9530/8.0.100-rc.2           VS 17.7.34221.43
+maui-maccatalyst           8.0.0-rc.2.9530/8.0.100-rc.2           VS 17.7.34221.43
+maccatalyst                17.0.8477-net8-rc2.2/8.0.100-rc.2      VS 17.7.34221.43
+android                    34.0.0-rc.2.479/8.0.100-rc.2           VS 17.7.34221.43
+maui-android               8.0.0-rc.2.9530/8.0.100-rc.2           VS 17.7.34221.43
+maui-ios                   8.0.0-rc.2.9530/8.0.100-rc.2           VS 17.7.34221.43
+ios                        17.0.8477-net8-rc2.2/8.0.100-rc.2      VS 17.7.34221.43
+
+Use `dotnet workload search` to find additional workloads to install.
+
+PS C:\Dev\StressTracker> dotnet workload search
+
+Workload ID                 Description
+------------------------------------------------------------------------------------
+android                     .NET SDK Workload for building Android applications.
+ios                         .NET SDK Workload for building iOS applications.
+maccatalyst                 .NET SDK Workload for building MacCatalyst applications.
+macos                       .NET SDK Workload for building macOS applications.
+maui                        .NET MAUI SDK for all platforms
+maui-android                .NET MAUI SDK for Android
+maui-desktop                .NET MAUI SDK for Desktop
+maui-ios                    .NET MAUI SDK for iOS
+maui-maccatalyst            .NET MAUI SDK for Mac Catalyst
+maui-mobile                 .NET MAUI SDK for Mobile
+maui-tizen                  .NET MAUI SDK for Tizen
+maui-windows                .NET MAUI SDK for Windows
+mobile-librarybuilder       workloads/mobile-librarybuilder/description
+tvos                        .NET SDK Workload for building tvOS applications.
+wasi-experimental           workloads/wasi-experimental/description
+wasm-experimental           workloads/wasm-experimental/description
+wasm-experimental-net7      .NET WebAssembly experimental tooling for net7.0
+wasm-tools                  .NET WebAssembly build tools
+wasm-tools-net6             .NET WebAssembly build tools for net6.0
+wasm-tools-net7             .NET WebAssembly build tools for net7.0
+
+PS C:\Dev\StressTracker> dotnet workload install android
+
+Advertising manifest not updated. Manifest package for microsoft.net.sdk.aspire doesn't exist.
+The machine has a pending reboot. The workload operation will continue, but you may need to restart.
+
+Successfully installed workload(s) android maui.
+
+PS C:\Dev\StressTracker> dotnet workload list
+
+Installed Workload Id      Manifest Version                       Installation Source
+----------------------------------------------------------------------------------------------------
+android                    34.0.0-rc.2.479/8.0.100-rc.2           SDK 8.0.100-rc.2, VS 17.7.34221.43
+maui                       8.0.0-rc.2.9530/8.0.100-rc.2           SDK 8.0.100-rc.2
+wasm-tools                 8.0.0-rc.2.23479.6/8.0.100-rc.2        VS 17.7.34221.43
+maui-windows               8.0.0-rc.2.9530/8.0.100-rc.2           VS 17.7.34221.43
+maui-maccatalyst           8.0.0-rc.2.9530/8.0.100-rc.2           VS 17.7.34221.43
+maccatalyst                17.0.8477-net8-rc2.2/8.0.100-rc.2      VS 17.7.34221.43
+maui-android               8.0.0-rc.2.9530/8.0.100-rc.2           VS 17.7.34221.43
+maui-ios                   8.0.0-rc.2.9530/8.0.100-rc.2           VS 17.7.34221.43
+ios                        17.0.8477-net8-rc2.2/8.0.100-rc.2      VS 17.7.34221.43
+
+PS C:\Dev\StressTracker> dotnet workload install ios       
+
+Advertising manifest not updated. Manifest package for microsoft.net.sdk.aspire doesn't exist.
+The machine has a pending reboot. The workload operation will continue, but you may need to restart.
+
+Successfully installed workload(s) ios android maui.
+
+PS C:\Dev\StressTracker> dotnet workload list       
+
+Installed Workload Id      Manifest Version                       Installation Source
+----------------------------------------------------------------------------------------------------
+android                    34.0.0-rc.2.479/8.0.100-rc.2           SDK 8.0.100-rc.2, VS 17.7.34221.43
+ios                        17.0.8477-net8-rc2.2/8.0.100-rc.2      SDK 8.0.100-rc.2, VS 17.7.34221.43
+maui                       8.0.0-rc.2.9530/8.0.100-rc.2           SDK 8.0.100-rc.2
+wasm-tools                 8.0.0-rc.2.23479.6/8.0.100-rc.2        VS 17.7.34221.43
+maui-windows               8.0.0-rc.2.9530/8.0.100-rc.2           VS 17.7.34221.43
+maui-maccatalyst           8.0.0-rc.2.9530/8.0.100-rc.2           VS 17.7.34221.43
+maccatalyst                17.0.8477-net8-rc2.2/8.0.100-rc.2      VS 17.7.34221.43
+maui-android               8.0.0-rc.2.9530/8.0.100-rc.2           VS 17.7.34221.43
+maui-ios                   8.0.0-rc.2.9530/8.0.100-rc.2           VS 17.7.34221.43
+
+-- onec installed all:
+PS C:\Dev\StressTracker> dotnet workload list                
+
+Installed Workload Id      Manifest Version                       Installation Source
+----------------------------------------------------------------------------------------------------
+android                    34.0.0-rc.2.479/8.0.100-rc.2           SDK 8.0.100-rc.2, VS 17.7.34221.43
+ios                        17.0.8477-net8-rc2.2/8.0.100-rc.2      SDK 8.0.100-rc.2, VS 17.7.34221.43
+maccatalyst                17.0.8477-net8-rc2.2/8.0.100-rc.2      SDK 8.0.100-rc.2, VS 17.7.34221.43
+maui                       8.0.0-rc.2.9530/8.0.100-rc.2           SDK 8.0.100-rc.2
+maui-android               8.0.0-rc.2.9530/8.0.100-rc.2           SDK 8.0.100-rc.2, VS 17.7.34221.43
+maui-ios                   8.0.0-rc.2.9530/8.0.100-rc.2           SDK 8.0.100-rc.2, VS 17.7.34221.43
+maui-maccatalyst           8.0.0-rc.2.9530/8.0.100-rc.2           SDK 8.0.100-rc.2, VS 17.7.34221.43
+maui-windows               8.0.0-rc.2.9530/8.0.100-rc.2           SDK 8.0.100-rc.2, VS 17.7.34221.43
+wasm-tools                 8.0.0-rc.2.23479.6/8.0.100-rc.2        SDK 8.0.100-rc.2, VS 17.7.34221.43
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
